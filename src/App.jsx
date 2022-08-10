@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <div className="App">
-        <h1>React "State" Learning :</h1>
+        <h1>Exercises with React "STATE"</h1>
         <h2>Counter :</h2>
         <p>Changing STATE value (numbers)</p>
         <Counter />
@@ -37,7 +37,7 @@ export default function App() {
         <img src="../images/state-as-props-01.png" alt="" />
         <p>Child</p>
         <img src="../images/state-as-props-02.png" alt="" />
-        <h2>Setting State From Child Component</h2>
+        <h2>Setting STATE From Child Component</h2>
         <p>In the Parent Component, the defined function (to toggle) is sent to the Child Component via a custom Prop</p>
         <p>In the Child Component, we recieve Props and set a real eventListener "onClick=" whose value is the function we recieved via Props </p>
         <p>The ability to pass "Setting" Functions from Parent to Child Components is crucial in React</p>
@@ -46,8 +46,17 @@ export default function App() {
         <img src="../images/setting-state-from-child-component-01.png" alt="" />
         <p>Child</p>
         <img src="../images/setting-state-from-child-component-02.png" alt="" />
+        <h2>Passing STATE downwards to multiple Child Components</h2>
+        <p>Header :</p>
         <Header user={user}/>
+        <p>Body :</p>
         <Body user={user}/>
+        <p>Parent :</p>
+        <img src="../images/which-level-to-put-state-01.png" alt="" />
+        <img src="../images/which-level-to-put-state-02.png" alt="" />
+        <p>Children</p>
+        <img src="../images/which-level-to-put-state-03.png" alt="" />
+        <img src="../images/which-level-to-put-state-04.png" alt="" />
     </div>
   )
 }
