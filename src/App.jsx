@@ -6,8 +6,14 @@ import Flipping from './components/Flipping';
 import StateArrays from './components/StateArrays';
 import StateObjects from './components/StateObjects';
 import StateAsProps from './components/StateAsProps';
+import SettingStateFromChildComponent from './components/SettingStateFromChildComponent';
+import Header from './components/Header';
+import Body from './components/Body';
 
 export default function App() {
+
+  const [user, setUser] = React.useState("Joe")
+
   return (
     <div className="App">
         <h1>React "State" Learning :</h1>
@@ -27,6 +33,21 @@ export default function App() {
         <h2>State As Props :</h2>
         <p>Parent Component has a STATE value, Child Component is passed that STATE value as PROPS</p>
         <StateAsProps />
+        <p>Parent</p>
+        <img src="../images/state-as-props-01.png" alt="" />
+        <p>Child</p>
+        <img src="../images/state-as-props-02.png" alt="" />
+        <h2>Setting State From Child Component</h2>
+        <p>In the Parent Component, the defined function (to toggle) is sent to the Child Component via a custom Prop</p>
+        <p>In the Child Component, we recieve Props and set a real eventListener "onClick=" whose value is the function we recieved via Props </p>
+        <p>The ability to pass "Setting" Functions from Parent to Child Components is crucial in React</p>
+        <SettingStateFromChildComponent />
+        <p>Parent</p>
+        <img src="../images/setting-state-from-child-component-01.png" alt="" />
+        <p>Child</p>
+        <img src="../images/setting-state-from-child-component-02.png" alt="" />
+        <Header user={user}/>
+        <Body user={user}/>
     </div>
   )
 }

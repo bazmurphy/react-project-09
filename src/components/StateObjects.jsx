@@ -33,7 +33,7 @@ export default function StateObjects() {
                         className="card--favorite"
                         onClick={toggleFavorite}
                     />
-                    <h2 className="card--name">{contact.firstName} {contact.lastName}</h2>
+                    <h3 className="card--name">{contact.firstName} {contact.lastName}</h3>
                     <p className="card--contact">{contact.phone}</p>
                     <p className="card--contact">{contact.email}</p>
                 </div>
