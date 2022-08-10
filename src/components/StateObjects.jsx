@@ -25,8 +25,7 @@ export default function StateObjects() {
     }
     
     return (
-        <main>
-            <article className="card">
+            <div className="card">
                 <img src="./images/user.png" className="card--image" />
                 <div className="card--info">
                     <img 
@@ -34,14 +33,10 @@ export default function StateObjects() {
                         className="card--favorite"
                         onClick={toggleFavorite}
                     />
-                    <h2 className="card--name">
-                        {contact.firstName} {contact.lastName}
-                    </h2>
+                    <h2 className="card--name">{contact.firstName} {contact.lastName}</h2>
                     <p className="card--contact">{contact.phone}</p>
                     <p className="card--contact">{contact.email}</p>
                 </div>
-                
-            </article>
-        </main>
+            </div>
     )
 }

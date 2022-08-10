@@ -28,7 +28,7 @@ export default function Flipping() {
     
     return (
     <div className="state">
-        <h1 className="state--title">Do I feel like going out tonight?</h1>
+        <h3 className="state--title">Do I feel like going out tonight?</h3>
         <div className="state--value" onClick={flip}>
             <h1>{isGoingOut ? "Yes" : "No"}</h1>
         </div>

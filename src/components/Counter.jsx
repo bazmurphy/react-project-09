@@ -64,15 +64,12 @@ export default function Counter() {
 
 
   return (
-    <div>
-          <h1 className="counter--title">Counter</h1>
-          <div className="counter">
-            <button className="counter--minus" onClick={subtract}>-</button>
-            <div className="counter--count">
-              <h1>{count}</h1>
-            </div>
-            <button className="counter--plus" onClick={add}>+</button>
-          </div>
+    <div className="counter">
+      <button className="counter--minus" onClick={subtract}>-</button>
+      <div className="counter--count">
+        <h1>{count}</h1>
+      </div>
+      <button className="counter--plus" onClick={add}>+</button>
     </div>
   );
 }

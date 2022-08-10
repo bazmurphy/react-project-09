@@ -27,7 +27,7 @@ export default function StateArrays() {
     const thingsElements = thingsArray.map(thing => <p key={thing}>{thing}</p>)
     
     return (
-        <div>
+        <div className="state-arrays">
             <button className="state-arrays-button" onClick={addItem}>Add Item</button>
             {thingsElements}
         </div>
