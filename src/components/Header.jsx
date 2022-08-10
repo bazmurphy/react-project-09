@@ -4,7 +4,7 @@ export default function Header(props) {
    
     return (
             <header>
-                <p>Current user: {props.user}</p>
+                <h3>Current user: {props.user}</h3>
             </header>
     )
 }
