@@ -47,14 +47,14 @@ export default function App() {
         <p>Child</p>
         <img src="../images/setting-state-from-child-component-02.png" alt="" />
         <h2>Passing STATE downwards to multiple Child Components</h2>
-        <p>Header :</p>
+        <p>Header Component (Child) :</p>
         <Header user={user}/>
-        <p>Body :</p>
+        <p>Body Component (Child) :</p>
         <Body user={user}/>
         <p>Parent :</p>
         <img src="../images/which-level-to-put-state-01.png" alt="" />
         <img src="../images/which-level-to-put-state-02.png" alt="" />
-        <p>Children</p>
+        <p>Children :</p>
         <img src="../images/which-level-to-put-state-03.png" alt="" />
         <img src="../images/which-level-to-put-state-04.png" alt="" />
     </div>
