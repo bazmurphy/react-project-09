@@ -9,6 +9,7 @@
 }
 
 body {
+  padding: 1rem;
   font-family: 'Inter', sans-serif;
   background-color: rgb(200, 200, 200);
   display: flex;
