@@ -20,8 +20,8 @@ export default function Flipping() {
         )
     }
 
-    // function changeMind() {
-    //     setIsGoingOut(prevState => !prevState)
+    // function flip() {
+    //     setIsGoingOut(prevIsGoingOut => !prevIsGoingOut)
     // }
     
     // ^ this is a clever way to say "just return the opposite"

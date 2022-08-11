@@ -20,16 +20,20 @@ export default function App() {
         <h2>Counter :</h2>
         <p>Changing STATE value (numbers)</p>
         <Counter />
+        <img src="../images/counter.png" alt="" />
         {/* <Ternary /> */}
         <h2>Flipping :</h2>
         <p>Swapping STATE value (boolean)</p>
         <Flipping />
+        <img src="../images/flipping.png" alt="" />
         <h2>State Arrays :</h2>
         <p>Adding elements to a STATE Array</p>
         <StateArrays />
+        <img src="../images/state-arrays.png" alt="" />
         <h2>State Objects :</h2>
         <p>Changing STATE Object properties</p>
         <StateObjects />
+        <img src="../images/state-objects.png" alt="" />
         <h2>State As Props :</h2>
         <p>Parent Component has a STATE value, Child Component is passed that STATE value as PROPS</p>
         <StateAsProps />
